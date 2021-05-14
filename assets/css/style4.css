@@ -159,7 +159,6 @@ h5 {
     color: #ebccc2;
     font-weight: 400;
     margin-bottom: 1%;
-
 }
 h1 {
     color: #ebccc2;
@@ -167,7 +166,7 @@ h1 {
     margin-bottom: 2%;
     font-size: 2rem;
 }
-p{
+p {
     color: rgb(115, 115, 115);
     font-size: 1rem;
     line-height: 1.7rem;
@@ -220,6 +219,10 @@ p{
     #article2 article p {
         line-height: 1.2rem;
     }
+    #article2 img {
+        width: 80%;
+        margin-left: 3%;
+    }
     #article3 {
         grid-column: 2/-1;
     }
@@ -234,35 +237,64 @@ p{
 
 /* Mobile */
 @media screen and (max-width: 576px) {
-    header nav a {
-        font-weight: 300;
-        font-size: 0.5rem;
-    }
     header nav a:nth-of-type(1) {
-       margin-left: 10%;
-    }
-    #bild-composition {
-        min-height: 50vh;
-    }
-    #composition article img {
-        width: 100%;
-    }
-     /* Aside */
-    main aside {
-        top: 15%;
-    }   
-    main aside a {
+        margin-left: 10%;
+     }
+     header nav a {
         font-size: 0.5rem;
-        font-weight: 300;
     }
-    main aside a::before {
-        margin-right: 10px;
+    header aside {
+        top: 10%;
+    }   
+    #video {
+        margin-top: 15%;
+        margin-left: 5%;
     }
-    main aside a:nth-of-type(5)::before {
-        margin-right: 10px;
+    #article1 {
+        margin-left: 7%;
     }
-    .line {
-        height: 20px;
-        width: 1px;
+    #article1 h5 {
+        font-size: 0.7rem;
+    }
+    #article1 h1 {
+        font-size: 1.3rem;
+    }
+    #article1 p {
+        font-size: 0.7rem;
+        line-height: 0.9rem;
+        margin-top: 5%;
+    }
+    #article2 {
+        flex-direction: column-reverse;
+    }
+    #article2 article {
+        margin-top: 5%;
+    }
+    #article2 article h1 {
+        font-size: 1.3rem;
+    }
+    #article2 article p {
+        font-size: 0.9rem;
+        margin-bottom: 3%;
+    }
+    #article3 {
+        flex-direction: column;
+    }
+    #article3 article {
+        margin-top: 5%;
+        width: 100%;
+        margin-right: 0;
+        padding-left: 0;
+    }
+    #article3 article h1 {
+        font-size: 1.3rem;
+    }
+    #article3 article p {
+        font-size: 0.9rem;
+        margin-bottom: 3%;
+    }
+    #article3 img {
+        padding-right: 5%;
+        
     }
 }
