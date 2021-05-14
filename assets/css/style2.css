@@ -128,3 +128,78 @@ main aside a:nth-of-type(2)::before {
     display: block;
     padding-bottom: 4%;
 }
+
+/* ----- media queries----- */
+@media screen and (max-width: 1200px) {
+    header nav a:nth-of-type(1) {
+        margin-left: 50%;
+     }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    header nav a:nth-of-type(1) {
+        margin-left: 40%;
+     }
+    #sessel {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    #sessel article {
+        width: 70%;
+        margin-left: 25%;
+        margin-bottom: 10%;
+    }
+    #sessel article p {
+        margin-top: 10%;
+        line-height: 1.5rem;
+    }
+    #bild-sessel {
+        width: 100%;
+        min-height: 80vh;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 576px) {
+    header nav a {
+        font-weight: 300;
+        font-size: 0.5rem;
+    }
+    header nav a:nth-of-type(1) {
+       margin-left: 10%;
+    }
+    #bild-sessel {
+        min-height: 50vh;
+    }
+    #sessel article h1 {
+        font-size: 1.8rem;
+    }
+    #sessel article p {
+        margin-top: 10%;
+        font-size: 0.7rem;
+        line-height: 1rem;
+    }
+    #span-block {
+        padding-bottom: 5%;
+    }
+     /* Aside */
+    main aside {
+        top: 15%;
+    }   
+    main aside a {
+        font-size: 0.5rem;
+        font-weight: 300;
+    }
+    main aside a::before {
+        margin-right: 10px;
+    }
+    main aside a:nth-of-type(2)::before {
+        margin-right: 10px;
+    }
+    .line {
+        height: 20px;
+        width: 1px;
+    }
+}

@@ -139,3 +139,91 @@ main aside a:nth-of-type(1)::before {
 #span-block {
     padding-bottom: 5%;
 }
+
+/* ----- media queries----- */
+@media screen and (max-width: 1200px) {
+    #design-a article {
+        margin: 0;
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    header nav a:nth-of-type(1) {
+       margin-left: 35%;
+    }
+    header p {
+        font-size: 1.7rem;
+        line-height: 2.2rem;
+    }
+    #design-a article h1 {
+        font-size: 1.8rem;
+    }
+    #design-a {
+        margin: 7% 4% 10%;
+    }
+    #design-a figure {
+        width: 100%;
+    }
+    #design-a article {
+        width: 100%;
+        margin: 0;
+    }
+    #design-a article p {
+        margin-top: 1%;
+        line-height: 1.5rem;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 576px) {
+    header nav a {
+        font-size: 0.5rem;
+    }
+    header nav a:nth-of-type(1) {
+        margin-left: 10%;
+     }
+     header p {
+         font-size: 1.2rem;
+         line-height: 2rem;
+         width: 70%;
+     }
+     #design-a article h1 {
+         font-size: 1rem;
+         margin-left: 5%;
+     }
+     #design-a {
+         margin: 7% 4% 10%;
+         display: flex;
+         flex-direction: column-reverse;
+     }
+     #design-a figure {
+        width: 85%;
+    }
+     #design-a article p {
+         margin-top: 1%;
+         font-size: 0.7rem;
+         line-height: 1rem;
+         width: 80%;
+         margin-left: 5%;
+         margin-bottom: 4%;
+     }
+     /* Aside */
+    main aside {
+        top: 15%;
+    }   
+    main aside a {
+        font-size: 0.5rem;
+        font-weight: 300;
+    }
+    main aside a::before {
+        margin-right: 10px;
+    }
+    main aside a:nth-of-type(1)::before {
+        margin-right: 10px;
+    }
+    .line {
+        height: 20px;
+        width: 1px;
+    }
+}

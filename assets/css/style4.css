@@ -154,7 +154,6 @@ header aside a:nth-of-type(4)::before {
 }
 #article3 img {
     width: 100%;
-    
 }
 h5 {
     color: #ebccc2;
@@ -172,4 +171,98 @@ p{
     color: rgb(115, 115, 115);
     font-size: 1rem;
     line-height: 1.7rem;
+}
+
+
+/* ----- media queries----- */
+@media screen and (max-width: 1200px) {
+    header nav a:nth-of-type(1) {
+        margin-left: 45%;
+     }
+     #article2 img {
+        width: 80%;
+    }
+    #article3 img {
+        width: 80%;
+        margin-left: 8%;
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    header nav a:nth-of-type(1) {
+        margin-left: 40%;
+     }
+    header aside {
+        top: 15%;
+    }   
+    header aside a {
+        font-size: 0.5rem;
+        font-weight: 300;
+    }
+    header aside a::before {
+        margin-right: 10px;
+    }
+    header aside a:nth-of-type(4)::before {
+        margin-right: 10px;
+    }
+    .line {
+        height: 20px;
+        width: 1px;
+    }
+    #article2 {
+        grid-column: 2/-1;
+    }
+    #article2 article {
+        margin-left: 0;
+        margin-right: 1%;
+    }
+    #article2 article p {
+        line-height: 1.2rem;
+    }
+    #article3 {
+        grid-column: 2/-1;
+    }
+    #article3 article {
+        margin-right: 0;
+        margin-left: 1%;
+    }
+    #article3 article p {
+        line-height: 1.2rem;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 576px) {
+    header nav a {
+        font-weight: 300;
+        font-size: 0.5rem;
+    }
+    header nav a:nth-of-type(1) {
+       margin-left: 10%;
+    }
+    #bild-composition {
+        min-height: 50vh;
+    }
+    #composition article img {
+        width: 100%;
+    }
+     /* Aside */
+    main aside {
+        top: 15%;
+    }   
+    main aside a {
+        font-size: 0.5rem;
+        font-weight: 300;
+    }
+    main aside a::before {
+        margin-right: 10px;
+    }
+    main aside a:nth-of-type(5)::before {
+        margin-right: 10px;
+    }
+    .line {
+        height: 20px;
+        width: 1px;
+    }
 }

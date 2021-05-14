@@ -94,7 +94,7 @@ header aside a::before {
 /* --------------Main---------------- */
 
 main {
-    margin: 13% 0 0 25%;
+    margin: 7% 0 5% 25%;
 }
 main h1 {
     color: #ebccc2;
@@ -113,14 +113,33 @@ main input {
     border: 1px solid #ebccc2;
     display: block;
     margin-bottom: 2%;
+    outline-style: none;
 }
 main input:hover {
     background: #ebccc2;
     color: #2e2e2e;
 }
+
+#contact {
+    margin-top: 5%;
+}
+#text {
+   margin-top: 1%;
+}
+#name {
+    margin-top: 1%;
+}
+label {
+    color: rgb(115, 115, 115);
+    padding-bottom: 5%;
+}
+#message h2 {
+    color: rgb(115, 115, 115);
+    font-weight: 400;
+    font-size: 1rem;
+}
 #map {
     display: flex;
-
 }
 #adress {
     display: flex;
