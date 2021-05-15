@@ -138,6 +138,17 @@ label {
     font-weight: 400;
     font-size: 1rem;
 }
+textarea {
+    display: block;
+    margin-bottom: 2%;
+    border-style: none;
+    border-radius: 5px;
+    border: 1px solid #ebccc2;
+    outline-style: none;
+    background: #2e2e2e;
+    color: rgb(115, 115, 115);
+    padding: 1%;
+}
 #map {
     display: flex;
 }
