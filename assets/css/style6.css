@@ -118,6 +118,7 @@ main input {
 main input:hover {
     background: #ebccc2;
     color: #2e2e2e;
+    transition: 1s;
 }
 
 #contact {
